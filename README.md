@@ -46,7 +46,7 @@ intent-system/
 ### 1 — Python Flask backend  (terminal 1)
 
 ```bash
-cd python-nlu
+cd nlu
 pip install -r requirements.txt
 
 # Train the model (only needed once, or when you add new training data)
@@ -60,7 +60,7 @@ python app.py
 ### 2 — React frontend  (terminal 2)
 
 ```bash
-cd react-ui
+cd ui
 npm install
 npm run dev
 # → http://localhost:5173
@@ -124,12 +124,12 @@ Open **http://localhost:5173** and start typing.
 ## Extending
 
 ### Add a new intent
-1. Add examples to `python-nlu/data/intents.json`
+1. Add examples to `nlu/data/intents.json`
 2. Re-run `python train.py`
-3. Add the intent to `INTENTS` in `react-ui/src/App.jsx`
+3. Add the intent to `INTENTS` in `ui/src/App.jsx`
 
 ### Add a new entity type
-Edit the regex patterns in `python-nlu/predict.py` → bottom of the file.
+Edit the regex patterns in `nlu/predict.py` → bottom of the file.
 
 ### Connect to real services
 Swap the action string in `predict.py` → `ACTIONS` dict for real API calls

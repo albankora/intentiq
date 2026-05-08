@@ -1,12 +1,13 @@
-.PHONY: help install install-python install-react \
+.PHONY: help venv install install-python install-react \
         train start-api start-ui start \
         stop clean reset
 
 # ── config ────────────────────────────────────────────────────────────────────
-PYTHON      := python3
-PIP         := pip3
-API_DIR     := python-nlu
-UI_DIR      := react-ui
+API_DIR     := nlu
+UI_DIR      := ui
+VENV        := $(API_DIR)/.venv
+PYTHON      := $(VENV)/bin/python
+PIP         := $(VENV)/bin/pip
 API_PORT    := 5001
 UI_PORT     := 5173
 API_PID     := .api.pid
@@ -14,10 +15,10 @@ API_PID     := .api.pid
 # ── default target ────────────────────────────────────────────────────────────
 help:
 	@echo ""
-	@echo "  Intent Understanding Engine"
+	@echo "  Clarix — Intent Understanding Engine"
 	@echo "  ─────────────────────────────────────────────"
-	@echo "  make install        Install all dependencies"
-	@echo "  make install-python Install Python dependencies only"
+	@echo "  make install        Create venv + install all dependencies"
+	@echo "  make install-python Create venv + install Python dependencies"
 	@echo "  make install-react  Install Node dependencies only"
 	@echo ""
 	@echo "  make train          Train the NLU model"
@@ -27,38 +28,48 @@ help:
 	@echo ""
 	@echo "  make stop           Stop background API process"
 	@echo "  make clean          Remove build artifacts and caches"
-	@echo "  make reset          clean + delete trained model"
+	@echo "  make reset          clean + delete venv + trained model"
 	@echo ""
+
+# ── virtual environment ───────────────────────────────────────────────────────
+venv:
+	@if [ ! -d "$(VENV)" ]; then \
+		echo "→ Creating virtual environment at $(VENV)…"; \
+		python3 -m venv $(VENV); \
+	else \
+		echo "→ Virtual environment already exists."; \
+	fi
 
 # ── install ───────────────────────────────────────────────────────────────────
 install: install-python install-react
 
-install-python:
-	@echo "→ Installing Python dependencies…"
+install-python: venv
+	@echo "→ Installing Python dependencies into venv…"
+	$(PIP) install --upgrade pip -q
 	$(PIP) install -r $(API_DIR)/requirements.txt
 
 install-react:
 	@echo "→ Installing Node dependencies…"
-	cd $(UI_DIR) && npm install
+	cd $(UI_DIR) && yarn install
 
 # ── model ─────────────────────────────────────────────────────────────────────
-train:
+train: venv
 	@echo "→ Training NLU model…"
-	cd $(API_DIR) && $(PYTHON) train.py
+	cd $(API_DIR) && ../$(PYTHON) train.py
 
 # ── run ───────────────────────────────────────────────────────────────────────
-start-api:
+start-api: venv
 	@echo "→ Starting Flask API on port $(API_PORT)…"
-	cd $(API_DIR) && $(PYTHON) app.py
+	cd $(API_DIR) && ../$(PYTHON) app.py
 
 start-ui:
 	@echo "→ Starting React UI on port $(UI_PORT)…"
 	cd $(UI_DIR) && npm run dev
 
 # Start API in background, then UI in foreground (Ctrl+C stops UI; run make stop for API)
-start:
+start: venv
 	@echo "→ Starting Flask API in background…"
-	cd $(API_DIR) && $(PYTHON) app.py & echo $$! > ../$(API_PID)
+	cd $(API_DIR) && ../$(PYTHON) app.py & echo $$! > ../$(API_PID)
 	@sleep 1
 	@echo "→ Starting React UI (Ctrl+C to stop)…"
 	cd $(UI_DIR) && npm run dev
@@ -81,6 +92,7 @@ clean:
 	@echo "   done."
 
 reset: clean
-	@echo "→ Removing trained model…"
+	@echo "→ Removing venv and trained model…"
+	rm -rf $(VENV)
 	rm -f $(API_DIR)/models/*.pkl
-	@echo "   Run 'make train' to retrain."
+	@echo "   Run 'make install && make train' to start fresh."
