@@ -15,7 +15,7 @@ API_PID     := .api.pid
 # ── default target ────────────────────────────────────────────────────────────
 help:
 	@echo ""
-	@echo "  Clarix — Intent Understanding Engine"
+	@echo "  Intentiq — Intent Understanding Engine"
 	@echo "  ─────────────────────────────────────────────"
 	@echo "  make install        Create venv + install all dependencies"
 	@echo "  make install-python Create venv + install Python dependencies"
@@ -54,8 +54,12 @@ install-react:
 
 # ── model ─────────────────────────────────────────────────────────────────────
 train: venv
-	@echo "→ Training NLU model…"
+	@echo "→ Training NLU model on all data…"
 	cd $(API_DIR) && ../$(PYTHON) train.py
+ 
+train-eval: venv
+	@echo "→ Training NLU model + accuracy report on held-out split…"
+	cd $(API_DIR) && ../$(PYTHON) train.py --eval
 
 # ── run ───────────────────────────────────────────────────────────────────────
 start-api: venv

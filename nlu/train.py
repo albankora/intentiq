@@ -1,29 +1,40 @@
 """
 train.py
 --------
-Train the intent classifier:
-  TF-IDF (unigrams + bigrams) → Logistic Regression
+Production trainer for Clarix NLU.
+Uses the best configuration found during experimentation:
+  - Porter stemming
+  - TF-IDF (unigrams, sublinear_tf=True, max_features=5000)
+  - LinearSVC (C=0.5) wrapped in CalibratedClassifierCV for probabilities
 
 Run:
-    python train.py
+    python train.py              # train on all data, save model
+    python train.py --eval       # also print accuracy on a held-out split
 
-Outputs:
+To experiment with different models/hyperparameters, use train_experiment.py.
+
+Output:
     models/intent_classifier.pkl
 """
 
-import json, os, pickle, re
+import argparse, json, os, pickle, re, time, warnings
+warnings.filterwarnings("ignore")
+
+from nltk.stem import PorterStemmer
+from sklearn.calibration import CalibratedClassifierCV
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
+from sklearn.svm import LinearSVC
 
-BASE   = os.path.dirname(__file__)
-DATA   = os.path.join(BASE, "data", "intents.json")
-MODEL  = os.path.join(BASE, "models", "intent_classifier.pkl")
+BASE  = os.path.dirname(__file__)
+DATA  = os.path.join(BASE, "data", "intents.json")
+MODEL = os.path.join(BASE, "models", "intent_classifier.pkl")
 os.makedirs(os.path.join(BASE, "models"), exist_ok=True)
 
-# ── stop words ────────────────────────────────────────────────────────────────
+_stemmer = PorterStemmer()
+
 STOP = {
     "i","me","my","we","our","you","your","he","she","it","the","a","an",
     "and","or","but","is","are","was","were","be","been","have","has","do",
@@ -34,52 +45,60 @@ STOP = {
 def preprocess(text: str) -> str:
     text = text.lower()
     text = re.sub(r"[^\w\s@.]", " ", text)
-    return " ".join(t for t in text.split() if t not in STOP and len(t) > 1)
+    tokens = [_stemmer.stem(t) for t in text.split() if t not in STOP and len(t) > 1]
+    return " ".join(tokens)
 
-# ── load ──────────────────────────────────────────────────────────────────────
-with open(DATA) as f:
-    data = json.load(f)
 
-texts  = [preprocess(d["text"]) for d in data]
-labels = [d["intent"]           for d in data]
+def build_pipeline() -> Pipeline:
+    """Best config determined by train_experiment.py grid search."""
+    return Pipeline([
+        ("tfidf", TfidfVectorizer(
+            ngram_range=(1, 1),
+            max_features=5000,
+            sublinear_tf=True,
+        )),
+        ("clf", CalibratedClassifierCV(
+            LinearSVC(C=0.5, max_iter=2000)
+        )),
+    ])
 
-print(f"Loaded {len(texts)} examples · {len(set(labels))} intents")
-for intent in sorted(set(labels)):
-    print(f"  {intent:<30} {labels.count(intent)} examples")
 
-# ── pipeline ──────────────────────────────────────────────────────────────────
-pipeline = Pipeline([
-    ("tfidf", TfidfVectorizer(ngram_range=(1, 2), max_features=5000, sublinear_tf=True)),
-    ("clf",   LogisticRegression(max_iter=1000, C=5.0, solver="lbfgs")),
-])
+def train(eval_mode: bool = False) -> None:
+    with open(DATA) as f:
+        data = json.load(f)
 
-# ── train / eval ──────────────────────────────────────────────────────────────
-X_train, X_test, y_train, y_test = train_test_split(
-    texts, labels, test_size=0.2, random_state=42, stratify=labels
-)
-pipeline.fit(X_train, y_train)
-print("\nClassification report (held-out 20%):")
-print(classification_report(y_test, pipeline.predict(X_test)))
+    texts  = [preprocess(d["text"]) for d in data]
+    labels = [d["intent"]           for d in data]
+    intents = sorted(set(labels))
 
-pipeline.fit(texts, labels)   # final fit on all data
+    print(f"[train] {len(texts)} examples · {len(intents)} intents")
 
-# ── save ──────────────────────────────────────────────────────────────────────
-with open(MODEL, "wb") as f:
-    pickle.dump({"pipeline": pipeline, "intents": sorted(set(labels))}, f)
-print(f"Model saved → {MODEL}")
+    # optional held-out evaluation
+    if eval_mode:
+        X_tr, X_te, y_tr, y_te = train_test_split(
+            texts, labels, test_size=0.15, random_state=42, stratify=labels
+        )
+        pipeline = build_pipeline()
+        pipeline.fit(X_tr, y_tr)
+        y_pred = pipeline.predict(X_te)
+        print(f"[eval]  Held-out accuracy: {accuracy_score(y_te, y_pred)*100:.2f}%")
+        print(classification_report(y_te, y_pred))
 
-# ── smoke test ────────────────────────────────────────────────────────────────
-SMOKE = [
-    ("Reschedule my appointment to next Thursday",  "reschedule_appointment"),
-    ("Send an email to boss@work.com",              "send_email"),
-    ("Cancel tomorrow's 3pm meeting",              "cancel_appointment"),
-    ("Book a team meeting next Friday at 2pm",      "book_meeting"),
-    ("Remind me at 8am to take my medication",      "create_reminder"),
-    ("Block my calendar for the Berlin conference", "update_calendar"),
-]
-print("\nSmoke tests:")
-for text, expected in SMOKE:
-    pred = pipeline.predict([preprocess(text)])[0]
-    conf = max(pipeline.predict_proba([preprocess(text)])[0]) * 100
-    ok   = "✓" if pred == expected else "✗"
-    print(f"  {ok} [{conf:5.1f}%]  {pred:<30}  {text}")
+    # final fit on all data
+    t0       = time.time()
+    pipeline = build_pipeline()
+    pipeline.fit(texts, labels)
+    elapsed  = time.time() - t0
+
+    with open(MODEL, "wb") as f:
+        pickle.dump({"pipeline": pipeline, "intents": intents}, f)
+
+    print(f"[train] Done in {elapsed:.2f}s → {MODEL}")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Clarix NLU trainer")
+    parser.add_argument("--eval", action="store_true",
+                        help="Print accuracy on a held-out split before saving")
+    args = parser.parse_args()
+    train(eval_mode=args.eval)
