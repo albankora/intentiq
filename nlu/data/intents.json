@@ -1,374 +1,2602 @@
 [
-  { "text": "I want to reschedule my appointment", "intent": "reschedule_appointment" },
-  { "text": "Move my appointment to another day", "intent": "reschedule_appointment" },
-  { "text": "Can we reschedule to next Monday", "intent": "reschedule_appointment" },
-  { "text": "Change my appointment time please", "intent": "reschedule_appointment" },
-  { "text": "I need to move my meeting to a different day", "intent": "reschedule_appointment" },
-  { "text": "Reschedule my appointment with Dr Smith", "intent": "reschedule_appointment" },
-  { "text": "Can you move my appointment to Thursday", "intent": "reschedule_appointment" },
-  { "text": "I need another appointment date", "intent": "reschedule_appointment" },
-  { "text": "Please reschedule my 3pm appointment", "intent": "reschedule_appointment" },
-  { "text": "I would like to shift my appointment", "intent": "reschedule_appointment" },
-  { "text": "Move the booking to next week", "intent": "reschedule_appointment" },
-  { "text": "Change my booking to Friday", "intent": "reschedule_appointment" },
-  { "text": "Push my appointment to the afternoon", "intent": "reschedule_appointment" },
-  { "text": "I need to postpone my appointment", "intent": "reschedule_appointment" },
-  { "text": "Can we move the session to tomorrow", "intent": "reschedule_appointment" },
-  { "text": "Reschedule to a later date please", "intent": "reschedule_appointment" },
-  { "text": "Change the time of my appointment", "intent": "reschedule_appointment" },
-  { "text": "I want to push back my appointment", "intent": "reschedule_appointment" },
-  { "text": "Move my slot to next Tuesday", "intent": "reschedule_appointment" },
-  { "text": "I need to change when my appointment is", "intent": "reschedule_appointment" },
-  { "text": "Can we reschedule for a different time", "intent": "reschedule_appointment" },
-  { "text": "Defer my appointment to next month", "intent": "reschedule_appointment" },
-  { "text": "I want a new time for my appointment", "intent": "reschedule_appointment" },
-  { "text": "Rebook my appointment please", "intent": "reschedule_appointment" },
-  { "text": "Let us pick a different day for the appointment", "intent": "reschedule_appointment" },
-  { "text": "I have to move my appointment back", "intent": "reschedule_appointment" },
-  { "text": "Can the appointment be moved to Wednesday", "intent": "reschedule_appointment" },
-  { "text": "I want to reschedule to a morning slot", "intent": "reschedule_appointment" },
-  { "text": "Please move my appointment to 10am", "intent": "reschedule_appointment" },
-  { "text": "I need to delay my appointment", "intent": "reschedule_appointment" },
-  { "text": "Change my appointment to next Thursday", "intent": "reschedule_appointment" },
-  { "text": "Shift my appointment by one day", "intent": "reschedule_appointment" },
-  { "text": "I want to reschedule my dentist visit", "intent": "reschedule_appointment" },
-  { "text": "Can we move my checkup to a different day", "intent": "reschedule_appointment" },
-  { "text": "I need to push my appointment to Friday", "intent": "reschedule_appointment" },
-  { "text": "Please change my appointment slot", "intent": "reschedule_appointment" },
-  { "text": "Can you reschedule me for next week", "intent": "reschedule_appointment" },
-  { "text": "Move the appointment forward to 2pm", "intent": "reschedule_appointment" },
-  { "text": "I have to reschedule because of a conflict", "intent": "reschedule_appointment" },
-  { "text": "Change my session to Monday morning", "intent": "reschedule_appointment" },
-  { "text": "Push the appointment to next available slot", "intent": "reschedule_appointment" },
-  { "text": "I need to reschedule my meeting with the doctor", "intent": "reschedule_appointment" },
-  { "text": "Can we shift the appointment to 4pm", "intent": "reschedule_appointment" },
-  { "text": "Please rearrange my appointment", "intent": "reschedule_appointment" },
-  { "text": "I need to change the day of my appointment", "intent": "reschedule_appointment" },
-  { "text": "Reschedule my appointment to next Monday at 9am", "intent": "reschedule_appointment" },
-  { "text": "I want to move my appointment by one week", "intent": "reschedule_appointment" },
-  { "text": "Can you change my appointment to the afternoon", "intent": "reschedule_appointment" },
-  { "text": "I need to put my appointment on a different day", "intent": "reschedule_appointment" },
-  { "text": "Can I get a different appointment time", "intent": "reschedule_appointment" },
-  { "text": "I want to change my appointment to next Friday", "intent": "reschedule_appointment" },
-  { "text": "Is it possible to reschedule my appointment", "intent": "reschedule_appointment" },
-  { "text": "Push my appointment later please", "intent": "reschedule_appointment" },
-  { "text": "I need to reschedule the booking", "intent": "reschedule_appointment" },
-  { "text": "Change my appointment date and time", "intent": "reschedule_appointment" },
-  { "text": "I would like to reschedule to a different slot", "intent": "reschedule_appointment" },
-  { "text": "Move the meeting to the following week", "intent": "reschedule_appointment" },
-  { "text": "I want to book a different time for my appointment", "intent": "reschedule_appointment" },
-  { "text": "Please reschedule this to next week", "intent": "reschedule_appointment" },
-  { "text": "I need to reschedule due to a conflict", "intent": "reschedule_appointment" },
-  { "text": "Change the appointment from Tuesday to Thursday", "intent": "reschedule_appointment" },
-
-  { "text": "Cancel my appointment", "intent": "cancel_appointment" },
-  { "text": "Cancel tomorrow's meeting", "intent": "cancel_appointment" },
-  { "text": "I want to cancel my booking", "intent": "cancel_appointment" },
-  { "text": "Please cancel my 2pm meeting", "intent": "cancel_appointment" },
-  { "text": "Remove my appointment from the calendar", "intent": "cancel_appointment" },
-  { "text": "I don't need the appointment anymore", "intent": "cancel_appointment" },
-  { "text": "Call off the meeting with John", "intent": "cancel_appointment" },
-  { "text": "Delete my scheduled appointment", "intent": "cancel_appointment" },
-  { "text": "I need to cancel the Monday meeting", "intent": "cancel_appointment" },
-  { "text": "Please remove my Friday appointment", "intent": "cancel_appointment" },
-  { "text": "I want to drop my appointment", "intent": "cancel_appointment" },
-  { "text": "Scratch the meeting for tomorrow", "intent": "cancel_appointment" },
-  { "text": "I no longer need my appointment", "intent": "cancel_appointment" },
-  { "text": "Please delete my booking", "intent": "cancel_appointment" },
-  { "text": "I want to cancel the dentist appointment", "intent": "cancel_appointment" },
-  { "text": "Call off tomorrow's session", "intent": "cancel_appointment" },
-  { "text": "I would like to cancel my scheduled visit", "intent": "cancel_appointment" },
-  { "text": "Remove the meeting from my schedule", "intent": "cancel_appointment" },
-  { "text": "I am cancelling my appointment", "intent": "cancel_appointment" },
-  { "text": "Please take my appointment off the books", "intent": "cancel_appointment" },
-  { "text": "Cancel the 3pm slot please", "intent": "cancel_appointment" },
-  { "text": "I won't be needing my appointment", "intent": "cancel_appointment" },
-  { "text": "Please cancel the booking for Friday", "intent": "cancel_appointment" },
-  { "text": "I need to call off my appointment", "intent": "cancel_appointment" },
-  { "text": "Clear my appointment from the schedule", "intent": "cancel_appointment" },
-  { "text": "Can you cancel my appointment with Dr Jones", "intent": "cancel_appointment" },
-  { "text": "I want to cancel next week's meeting", "intent": "cancel_appointment" },
-  { "text": "Please cancel my Thursday appointment", "intent": "cancel_appointment" },
-  { "text": "Delete the appointment on Monday", "intent": "cancel_appointment" },
-  { "text": "I have to cancel my appointment today", "intent": "cancel_appointment" },
-  { "text": "Cancel my morning appointment please", "intent": "cancel_appointment" },
-  { "text": "I don't want the appointment anymore", "intent": "cancel_appointment" },
-  { "text": "Can you remove my upcoming appointment", "intent": "cancel_appointment" },
-  { "text": "I need to cancel due to a conflict", "intent": "cancel_appointment" },
-  { "text": "Please remove the session from my calendar", "intent": "cancel_appointment" },
-  { "text": "I want to cancel my checkup appointment", "intent": "cancel_appointment" },
-  { "text": "Drop my appointment for this week", "intent": "cancel_appointment" },
-  { "text": "Cancel the appointment at 11am", "intent": "cancel_appointment" },
-  { "text": "I need to cancel my evening appointment", "intent": "cancel_appointment" },
-  { "text": "I want to remove the meeting", "intent": "cancel_appointment" },
-  { "text": "Cancel the upcoming appointment please", "intent": "cancel_appointment" },
-  { "text": "I am cancelling my doctor appointment", "intent": "cancel_appointment" },
-  { "text": "Please call off my appointment on Wednesday", "intent": "cancel_appointment" },
-  { "text": "I need to cancel my Tuesday meeting", "intent": "cancel_appointment" },
-  { "text": "Take my appointment off the schedule", "intent": "cancel_appointment" },
-  { "text": "Cancel the booking I have on Friday", "intent": "cancel_appointment" },
-  { "text": "Please delete the meeting with the team", "intent": "cancel_appointment" },
-  { "text": "I need my appointment cancelled immediately", "intent": "cancel_appointment" },
-  { "text": "Remove the Friday session", "intent": "cancel_appointment" },
-  { "text": "Cancel my appointment scheduled for 4pm", "intent": "cancel_appointment" },
-  { "text": "Please remove the booking from my diary", "intent": "cancel_appointment" },
-  { "text": "Cancel the appointment with the therapist", "intent": "cancel_appointment" },
-  { "text": "I want to cancel the meeting on Thursday", "intent": "cancel_appointment" },
-  { "text": "Please cancel the session I booked", "intent": "cancel_appointment" },
-  { "text": "I need to cancel my next appointment", "intent": "cancel_appointment" },
-  { "text": "Cancel the appointment I made last week", "intent": "cancel_appointment" },
-  { "text": "I want to cancel all my appointments today", "intent": "cancel_appointment" },
-  { "text": "Please cancel this appointment for me", "intent": "cancel_appointment" },
-  { "text": "I am going to cancel my upcoming visit", "intent": "cancel_appointment" },
-  { "text": "Can you call off the 9am appointment", "intent": "cancel_appointment" },
-  { "text": "I need to get rid of the appointment on Monday", "intent": "cancel_appointment" },
-
-  { "text": "Send an email to test@test.com", "intent": "send_email" },
-  { "text": "Email John about the meeting", "intent": "send_email" },
-  { "text": "Write an email to sarah@company.com", "intent": "send_email" },
-  { "text": "I want to send a message to the team", "intent": "send_email" },
-  { "text": "Draft an email to my boss", "intent": "send_email" },
-  { "text": "Send a message to john@example.com", "intent": "send_email" },
-  { "text": "Compose an email about the project update", "intent": "send_email" },
-  { "text": "Send email to test@test.com to reschedule", "intent": "send_email" },
-  { "text": "Email the client about the deadline", "intent": "send_email" },
-  { "text": "I need to send an email to marketing", "intent": "send_email" },
-  { "text": "Drop an email to the HR team", "intent": "send_email" },
-  { "text": "Forward a message to accounts@company.com", "intent": "send_email" },
-  { "text": "Write to the supplier about the order", "intent": "send_email" },
-  { "text": "Send a follow-up email to the client", "intent": "send_email" },
-  { "text": "Email support@help.com about my issue", "intent": "send_email" },
-  { "text": "I need to write an email to the team", "intent": "send_email" },
-  { "text": "Send a message to admin@office.com", "intent": "send_email" },
-  { "text": "Compose a message to the board", "intent": "send_email" },
-  { "text": "Draft a message to my colleague", "intent": "send_email" },
-  { "text": "Send an update to the project team", "intent": "send_email" },
-  { "text": "Write an email to notify the team", "intent": "send_email" },
-  { "text": "Send a note to manager@work.com", "intent": "send_email" },
-  { "text": "I want to email a report to finance", "intent": "send_email" },
-  { "text": "Send a quick email to alice@domain.com", "intent": "send_email" },
-  { "text": "I need to compose an email right now", "intent": "send_email" },
-  { "text": "Write an email to the customer service team", "intent": "send_email" },
-  { "text": "Please send an email to the vendor", "intent": "send_email" },
-  { "text": "Can you draft an email for me", "intent": "send_email" },
-  { "text": "Send a reminder email to the participants", "intent": "send_email" },
-  { "text": "Email the contractor about the invoice", "intent": "send_email" },
-  { "text": "Compose an email with the meeting notes", "intent": "send_email" },
-  { "text": "Send the proposal to client@business.com", "intent": "send_email" },
-  { "text": "Write an email confirming the appointment", "intent": "send_email" },
-  { "text": "Email the team about tomorrow's standup", "intent": "send_email" },
-  { "text": "Send an introduction email to new staff", "intent": "send_email" },
-  { "text": "Write a thank you email to the interviewer", "intent": "send_email" },
-  { "text": "Draft an apology email to the client", "intent": "send_email" },
-  { "text": "Send the invoice to billing@company.com", "intent": "send_email" },
-  { "text": "Compose an email to request a meeting", "intent": "send_email" },
-  { "text": "Email the department heads about the changes", "intent": "send_email" },
-  { "text": "I want to send a status update by email", "intent": "send_email" },
-  { "text": "Draft and send an email to the recruiter", "intent": "send_email" },
-  { "text": "Email a copy of the report to the CEO", "intent": "send_email" },
-  { "text": "I need to send out an announcement by email", "intent": "send_email" },
-  { "text": "Write an email asking for feedback", "intent": "send_email" },
-  { "text": "Compose a message for the newsletter", "intent": "send_email" },
-  { "text": "Email a reminder about the deadline", "intent": "send_email" },
-  { "text": "I want to write an email to my professor", "intent": "send_email" },
-  { "text": "Please email the updated schedule to everyone", "intent": "send_email" },
-  { "text": "Send a quick note to the operations team", "intent": "send_email" },
-  { "text": "Email the stakeholders about the delay", "intent": "send_email" },
-  { "text": "I need to draft an email about the budget", "intent": "send_email" },
-  { "text": "Write an email to request time off", "intent": "send_email" },
-  { "text": "Send an email to introduce the new product", "intent": "send_email" },
-  { "text": "I want to send a newsletter to subscribers", "intent": "send_email" },
-  { "text": "Send the report by email to the manager", "intent": "send_email" },
-  { "text": "Please write an email about the new policy", "intent": "send_email" },
-  { "text": "I need to fire off an email to HR", "intent": "send_email" },
-  { "text": "Compose and send a message to the supplier", "intent": "send_email" },
-  { "text": "Drop a line to the client by email", "intent": "send_email" },
-  { "text": "Send an email with the latest updates", "intent": "send_email" },
-
-  { "text": "Book a meeting for next Friday", "intent": "book_meeting" },
-  { "text": "Schedule a meeting with the team", "intent": "book_meeting" },
-  { "text": "Set up a call with John at 3pm", "intent": "book_meeting" },
-  { "text": "I need to book a conference room", "intent": "book_meeting" },
-  { "text": "Arrange a meeting with the client", "intent": "book_meeting" },
-  { "text": "Can you schedule a call for Monday", "intent": "book_meeting" },
-  { "text": "Book a 1 hour meeting next week", "intent": "book_meeting" },
-  { "text": "I want to set up a team meeting", "intent": "book_meeting" },
-  { "text": "Schedule a video call for Tuesday 2pm", "intent": "book_meeting" },
-  { "text": "Plan a meeting with the marketing department", "intent": "book_meeting" },
-  { "text": "I need to book a standup with the dev team", "intent": "book_meeting" },
-  { "text": "Set up a one-on-one with my manager", "intent": "book_meeting" },
-  { "text": "Schedule a weekly sync with the team", "intent": "book_meeting" },
-  { "text": "Book a call with the consultant", "intent": "book_meeting" },
-  { "text": "I want to arrange a review session", "intent": "book_meeting" },
-  { "text": "Set up a Zoom call with the client", "intent": "book_meeting" },
-  { "text": "Book a boardroom for Wednesday afternoon", "intent": "book_meeting" },
-  { "text": "I need to schedule a project kickoff", "intent": "book_meeting" },
-  { "text": "Arrange a catch-up with the sales team", "intent": "book_meeting" },
-  { "text": "Can you book a meeting room for Thursday", "intent": "book_meeting" },
-  { "text": "Schedule a planning meeting for next sprint", "intent": "book_meeting" },
-  { "text": "I want to book a strategy session", "intent": "book_meeting" },
-  { "text": "Set up a call to discuss the proposal", "intent": "book_meeting" },
-  { "text": "Book a team catch-up for Monday morning", "intent": "book_meeting" },
-  { "text": "I need to organise a meeting with the board", "intent": "book_meeting" },
-  { "text": "Schedule a quick check-in with the team", "intent": "book_meeting" },
-  { "text": "Book a workshop for the new project", "intent": "book_meeting" },
-  { "text": "I want to arrange a call with the partners", "intent": "book_meeting" },
-  { "text": "Set a meeting for the product demo", "intent": "book_meeting" },
-  { "text": "I need to book a video conference", "intent": "book_meeting" },
-  { "text": "Schedule an onboarding session for new hires", "intent": "book_meeting" },
-  { "text": "Book a slot to discuss the contract", "intent": "book_meeting" },
-  { "text": "Set up a retrospective meeting", "intent": "book_meeting" },
-  { "text": "I want to schedule a brainstorm session", "intent": "book_meeting" },
-  { "text": "Can you book me in for a meeting on Friday", "intent": "book_meeting" },
-  { "text": "Arrange a meeting to go over the results", "intent": "book_meeting" },
-  { "text": "I need a meeting room booked for tomorrow", "intent": "book_meeting" },
-  { "text": "Schedule a 30 minute sync with design", "intent": "book_meeting" },
-  { "text": "Book a monthly all-hands meeting", "intent": "book_meeting" },
-  { "text": "I want to arrange a discovery call", "intent": "book_meeting" },
-  { "text": "Set up a meeting to review the budget", "intent": "book_meeting" },
-  { "text": "Book a session with the training team", "intent": "book_meeting" },
-  { "text": "I need to schedule a town hall meeting", "intent": "book_meeting" },
-  { "text": "Can you set up a call for next Tuesday", "intent": "book_meeting" },
-  { "text": "Book a meeting to present the findings", "intent": "book_meeting" },
-  { "text": "Set up a meeting to finalise the contract", "intent": "book_meeting" },
-  { "text": "I need to book a call to follow up on the proposal", "intent": "book_meeting" },
-  { "text": "Schedule a meeting for project planning", "intent": "book_meeting" },
-  { "text": "Book a slot to present the roadmap", "intent": "book_meeting" },
-  { "text": "I want a meeting with the engineering team", "intent": "book_meeting" },
-  { "text": "Set up a call to align on priorities", "intent": "book_meeting" },
-  { "text": "Can we book a meeting to review the plan", "intent": "book_meeting" },
-  { "text": "I need to set up a sync with the PM", "intent": "book_meeting" },
-  { "text": "Schedule an interview with the candidate", "intent": "book_meeting" },
-  { "text": "Book a 15 minute stand up for tomorrow", "intent": "book_meeting" },
-  { "text": "I want to arrange a team building session", "intent": "book_meeting" },
-  { "text": "Set up a meeting with stakeholders for review", "intent": "book_meeting" },
-  { "text": "Can we arrange a call this week", "intent": "book_meeting" },
-  { "text": "I need to fix a time to meet with the director", "intent": "book_meeting" },
-  { "text": "Please book a conference call for Friday", "intent": "book_meeting" },
-  { "text": "I want to set up an introductory call", "intent": "book_meeting" },
-
-  { "text": "Remind me to call John at 4pm", "intent": "create_reminder" },
-  { "text": "Set a reminder for my dentist appointment", "intent": "create_reminder" },
-  { "text": "Remind me tomorrow morning to send the report", "intent": "create_reminder" },
-  { "text": "Create a reminder for the team standup", "intent": "create_reminder" },
-  { "text": "I need a reminder to take my medication at 8am", "intent": "create_reminder" },
-  { "text": "Alert me 30 minutes before the meeting", "intent": "create_reminder" },
-  { "text": "Don't let me forget to call the client", "intent": "create_reminder" },
-  { "text": "Set an alarm for my flight tomorrow", "intent": "create_reminder" },
-  { "text": "Remind me to submit the report by Friday", "intent": "create_reminder" },
-  { "text": "I need a reminder for the quarterly review", "intent": "create_reminder" },
-  { "text": "Set a notification for the project deadline", "intent": "create_reminder" },
-  { "text": "Remind me to pay the invoice on Monday", "intent": "create_reminder" },
-  { "text": "I need an alert to pick up the kids at 3pm", "intent": "create_reminder" },
-  { "text": "Set a reminder to follow up with the client", "intent": "create_reminder" },
-  { "text": "Remind me to check my emails at noon", "intent": "create_reminder" },
-  { "text": "Set an alert for the product launch", "intent": "create_reminder" },
-  { "text": "Remind me about the team meeting at 2pm", "intent": "create_reminder" },
-  { "text": "I need a reminder to renew my subscription", "intent": "create_reminder" },
-  { "text": "Alert me when the meeting is about to start", "intent": "create_reminder" },
-  { "text": "Set a daily reminder for my standup", "intent": "create_reminder" },
-  { "text": "I need a reminder to complete the form", "intent": "create_reminder" },
-  { "text": "Please remind me to send the invoice", "intent": "create_reminder" },
-  { "text": "Create an alert for the board meeting", "intent": "create_reminder" },
-  { "text": "Remind me to respond to the email", "intent": "create_reminder" },
-  { "text": "I want to be reminded of the deadline", "intent": "create_reminder" },
-  { "text": "Set a reminder to call the bank tomorrow", "intent": "create_reminder" },
-  { "text": "I need an alert before the conference call", "intent": "create_reminder" },
-  { "text": "Set a reminder for the school pickup", "intent": "create_reminder" },
-  { "text": "Create a reminder for the webinar", "intent": "create_reminder" },
-  { "text": "I need a reminder to review the contract", "intent": "create_reminder" },
-  { "text": "Set an alert for my weekly review", "intent": "create_reminder" },
-  { "text": "Remind me to prepare the agenda for tomorrow", "intent": "create_reminder" },
-  { "text": "Set a reminder for the tax deadline", "intent": "create_reminder" },
-  { "text": "Remind me to send the minutes after the meeting", "intent": "create_reminder" },
-  { "text": "I need an alert to join the webinar at 6pm", "intent": "create_reminder" },
-  { "text": "Please remind me to update the spreadsheet", "intent": "create_reminder" },
-  { "text": "Set a nightly reminder to log my hours", "intent": "create_reminder" },
-  { "text": "Remind me to back up my files on Sunday", "intent": "create_reminder" },
-  { "text": "I want a reminder to book the restaurant", "intent": "create_reminder" },
-  { "text": "Create a reminder to confirm the reservation", "intent": "create_reminder" },
-  { "text": "Remind me at 7am to take my vitamins", "intent": "create_reminder" },
-  { "text": "Set a reminder for the performance review", "intent": "create_reminder" },
-  { "text": "I need to be reminded about the team lunch", "intent": "create_reminder" },
-  { "text": "Alert me to send the weekly report on Friday", "intent": "create_reminder" },
-  { "text": "Set a recurring reminder for every Monday morning", "intent": "create_reminder" },
-  { "text": "Remind me to check the server logs", "intent": "create_reminder" },
-  { "text": "I need a heads up before the client call", "intent": "create_reminder" },
-  { "text": "Set a reminder to renew the domain", "intent": "create_reminder" },
-  { "text": "Remind me to file the expense report", "intent": "create_reminder" },
-  { "text": "I want a reminder to call this weekend", "intent": "create_reminder" },
-  { "text": "Set a reminder for the end of day summary", "intent": "create_reminder" },
-  { "text": "Remind me to print the boarding pass", "intent": "create_reminder" },
-  { "text": "I need an alert for the sprint planning session", "intent": "create_reminder" },
-  { "text": "Please remind me to order office supplies", "intent": "create_reminder" },
-  { "text": "Set a reminder to review the pull request", "intent": "create_reminder" },
-  { "text": "Please notify me before the deadline", "intent": "create_reminder" },
-  { "text": "I need to be pinged about the status update", "intent": "create_reminder" },
-  { "text": "Alert me when the report is due", "intent": "create_reminder" },
-  { "text": "Give me a nudge to follow up on the ticket", "intent": "create_reminder" },
-  { "text": "I want a pop-up reminder for the all-hands", "intent": "create_reminder" },
-  { "text": "Set a reminder to complete the onboarding checklist", "intent": "create_reminder" },
-
-  { "text": "Update my calendar for the conference", "intent": "update_calendar" },
-  { "text": "Add the project deadline to my calendar", "intent": "update_calendar" },
-  { "text": "Block out next Monday on my calendar", "intent": "update_calendar" },
-  { "text": "Mark me as busy on Friday afternoon", "intent": "update_calendar" },
-  { "text": "Add a vacation block to my schedule", "intent": "update_calendar" },
-  { "text": "Update my availability for next week", "intent": "update_calendar" },
-  { "text": "Add the London conference to my calendar", "intent": "update_calendar" },
-  { "text": "Block my calendar for the annual review", "intent": "update_calendar" },
-  { "text": "Put the product launch on my calendar", "intent": "update_calendar" },
-  { "text": "Update my schedule for the client visit", "intent": "update_calendar" },
-  { "text": "Add a focus block to Thursday morning", "intent": "update_calendar" },
-  { "text": "Mark my calendar as unavailable on Wednesday", "intent": "update_calendar" },
-  { "text": "Block Friday afternoon for deep work", "intent": "update_calendar" },
-  { "text": "Add the quarterly review to my calendar", "intent": "update_calendar" },
-  { "text": "Put a hold on my calendar for training", "intent": "update_calendar" },
-  { "text": "Update my out-of-office on the calendar", "intent": "update_calendar" },
-  { "text": "Add the team offsite to my schedule", "intent": "update_calendar" },
-  { "text": "Block time on Monday for the all-hands", "intent": "update_calendar" },
-  { "text": "Add a personal event to my calendar", "intent": "update_calendar" },
-  { "text": "Put a placeholder on my calendar for next week", "intent": "update_calendar" },
-  { "text": "Update my calendar with the new event", "intent": "update_calendar" },
-  { "text": "Block the morning for uninterrupted work", "intent": "update_calendar" },
-  { "text": "Add the company holiday to the calendar", "intent": "update_calendar" },
-  { "text": "Mark my schedule as busy all day Friday", "intent": "update_calendar" },
-  { "text": "Add a heads down block to my calendar", "intent": "update_calendar" },
-  { "text": "I need to update my calendar for the seminar", "intent": "update_calendar" },
-  { "text": "Block time for the executive offsite", "intent": "update_calendar" },
-  { "text": "Put the board meeting on my calendar", "intent": "update_calendar" },
-  { "text": "Add the client visit to next Tuesday", "intent": "update_calendar" },
-  { "text": "Update my schedule with the new deadline", "intent": "update_calendar" },
-  { "text": "I want to block my calendar for interviews", "intent": "update_calendar" },
-  { "text": "Add the product release date to my calendar", "intent": "update_calendar" },
-  { "text": "Block Thursday for the strategy day", "intent": "update_calendar" },
-  { "text": "Put a time block for coding on my calendar", "intent": "update_calendar" },
-  { "text": "Update my calendar to show I am on leave", "intent": "update_calendar" },
-  { "text": "Add the sprint review to my schedule", "intent": "update_calendar" },
-  { "text": "Block the afternoon for personal errands", "intent": "update_calendar" },
-  { "text": "Add a recurring event to my calendar", "intent": "update_calendar" },
-  { "text": "Put the hackathon dates on my calendar", "intent": "update_calendar" },
-  { "text": "Update my calendar with the travel dates", "intent": "update_calendar" },
-  { "text": "I need to block time for the budget meeting", "intent": "update_calendar" },
-  { "text": "Add a work from home day to my calendar", "intent": "update_calendar" },
-  { "text": "Mark the milestone on my calendar", "intent": "update_calendar" },
-  { "text": "Block my lunch break on the calendar", "intent": "update_calendar" },
-  { "text": "I want to update my schedule with new hours", "intent": "update_calendar" },
-  { "text": "Put the networking event on my calendar", "intent": "update_calendar" },
-  { "text": "Block time on Wednesday for the workshop", "intent": "update_calendar" },
-  { "text": "Add the certification exam to my calendar", "intent": "update_calendar" },
-  { "text": "Update my calendar to reflect the new schedule", "intent": "update_calendar" },
-  { "text": "Block out time for the design sprint", "intent": "update_calendar" },
-  { "text": "I need to add the new deadline to my calendar", "intent": "update_calendar" },
-  { "text": "Mark next Friday as a public holiday on my calendar", "intent": "update_calendar" },
-  { "text": "Put the investor meeting on my schedule", "intent": "update_calendar" },
-  { "text": "Add a lunch block on Tuesday", "intent": "update_calendar" },
-  { "text": "Update my calendar with the conference schedule", "intent": "update_calendar" },
-  { "text": "Block my calendar for the sales kick off", "intent": "update_calendar" },
-  { "text": "I want to add the new project dates to my calendar", "intent": "update_calendar" },
-  { "text": "Put my gym sessions on the calendar", "intent": "update_calendar" },
-  { "text": "Block time every morning for planning", "intent": "update_calendar" },
-  { "text": "Add the new meeting to my existing schedule", "intent": "update_calendar" },
-  { "text": "I need to put the offsite on my calendar", "intent": "update_calendar" },
-  { "text": "Update my availability to reflect the new block", "intent": "update_calendar" }
+  {
+    "text": "I want to book an appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I need to schedule an appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Can I make an appointment for next Monday",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Book me in for a consultation",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I would like to arrange an appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Please book an appointment with Dr Smith",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Set up an appointment for me this week",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I need to get an appointment as soon as possible",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Can you schedule me in for a checkup",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I want to reserve a slot on Friday afternoon",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Book an appointment for my follow-up visit",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I need to get booked in for a session",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Schedule a new appointment for me please",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Can I get an appointment next Tuesday",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I would like to make a booking for Thursday",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Please arrange an appointment with the specialist",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I need a new appointment at the earliest slot",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Book me in for a 30 minute appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I want to reserve a consultation slot",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Can you find me an available appointment this week",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I need to schedule my annual checkup",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Make me an appointment for next Wednesday",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I would like to book in for a review session",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Please get me an appointment for Monday morning",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Can I book a slot with the therapist",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I want to set up a new appointment for this month",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Book me a two hour appointment next week",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I need to arrange a first visit appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Schedule an appointment for my partner too",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I want to get an appointment at the clinic on Friday",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Please confirm my appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I want to confirm my booking for tomorrow",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Can you confirm my appointment is still on",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Yes I will be attending my appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I am confirming my appointment for Monday",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Please mark my appointment as confirmed",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I want to lock in my appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Confirm my 2pm appointment please",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Yes I can make the appointment on Thursday",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I am going ahead with my appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Please confirm the booking I made yesterday",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I want to accept the appointment slot",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Mark me as confirmed for the Friday appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I am confirming attendance for my appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Yes that appointment time works for me",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Please go ahead and confirm my booking",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I want to finalise my appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Confirm the slot I reserved last week",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I am ready to confirm my appointment with the doctor",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Please confirm I will be there for the 10am appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I want to verify my appointment is booked",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Can you confirm the appointment details for me",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Yes I will be there for the appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I am confirming my next appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Please lock in the appointment I scheduled",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I want to confirm my upcoming visit",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Confirm the session I have booked for Tuesday",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I am happy to confirm my appointment at 3pm",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Please confirm my appointment is in the system",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I want to seal the booking for next Monday",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I want to reschedule my appointment",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Move my appointment to another day",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Can we reschedule to next Monday",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Change my appointment time please",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "I need to move my meeting to a different day",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Reschedule my appointment with Dr Smith",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Can you move my appointment to Thursday",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "I need another appointment date",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Please reschedule my 3pm appointment",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "I would like to shift my appointment",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Move the booking to next week",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Change my booking to Friday",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Push my appointment to the afternoon",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "I need to postpone my appointment",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Can we move the session to tomorrow",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Reschedule to a later date please",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Change the time of my appointment",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "I want to push back my appointment",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Move my slot to next Tuesday",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Can we reschedule for a different time",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Defer my appointment to next month",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Rebook my appointment please",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "I have to move my appointment back",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Can the appointment be moved to Wednesday",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "I need to delay my appointment",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Change my appointment to next Thursday",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "I need to push my appointment to Friday",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Please rearrange my appointment",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Is it possible to reschedule my appointment",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "I would like to reschedule to a different slot",
+    "intent": "reschedule_appointment"
+  },
+  {
+    "text": "Cancel my appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Cancel tomorrow's meeting",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I want to cancel my booking",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Please cancel my 2pm appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Remove my appointment from the calendar",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I don't need the appointment anymore",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Delete my scheduled appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I need to cancel the Monday appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Please remove my Friday appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I want to drop my appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I no longer need my appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Please delete my booking",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I want to cancel the dentist appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I would like to cancel my scheduled visit",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Remove the appointment from my schedule",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I am cancelling my appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Cancel the 3pm slot please",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I won't be needing my appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I need to call off my appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Can you cancel my appointment with Dr Jones",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Please cancel my Thursday appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Delete the appointment on Monday",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I have to cancel my appointment today",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Cancel my morning appointment please",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I want to cancel my checkup appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I am going to cancel my upcoming visit",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Please cancel this appointment for me",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Cancel the appointment with the therapist",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "I need to cancel my next appointment",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "Cancel the appointment I made last week",
+    "intent": "cancel_appointment"
+  },
+  {
+    "text": "What is the status of my appointment",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Is my appointment confirmed",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Can you check my appointment details",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "When is my next appointment",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I want to know if my appointment is booked",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Has my appointment been confirmed",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Can you look up my appointment",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "What time is my appointment on Friday",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I need to check my upcoming appointment",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Is my booking still active",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Tell me the details of my appointment",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "What appointments do I have this week",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Look up my appointment for Monday",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I want to review my appointment details",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Can you confirm the time of my appointment",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Check if my appointment is still scheduled",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "What is the date of my next appointment",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I need to find out about my appointment",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Show me my appointment history",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Is my appointment still on for tomorrow",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "What doctor is my appointment with",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I want to see my upcoming bookings",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Can you pull up my appointment record",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I need my appointment reference number",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Did my appointment get confirmed",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Check the status of my Friday booking",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I want to verify my appointment is still booked",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Can I see the details of my next visit",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "What is on my schedule for next week",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I need to know if my appointment went through",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I missed my appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I was unable to attend my appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Please mark me as a no show",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I didn't make it to my appointment today",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I failed to show up for my booking",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I was a no show for my appointment yesterday",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I could not attend my session this morning",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Please record that I missed my appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I wasn't able to make it to my appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I missed the 10am appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "The patient did not show up for their appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Please log a no show for my booking",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I could not make my appointment on Monday",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Record that I missed my visit",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I did not attend the appointment I had booked",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Mark the appointment as a no show please",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I was not present for my appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I forgot about my appointment and missed it",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Please note that I did not attend",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I had to skip my appointment due to an emergency",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I was a no show for Thursday's session",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "My patient missed their appointment this afternoon",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I could not be there for my 2pm appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Flag my appointment as missed",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I failed to turn up to my booking",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Please update my record to show I missed the visit",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I was stuck in traffic and missed my appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Record a missed attendance for my appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I did not show up and need to rebook",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I missed my appointment and want to reschedule",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Book a meeting for next Friday",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Schedule a meeting with the team",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Set up a call with John at 3pm",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I need to book a conference room",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Arrange a meeting with the client",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Can you schedule a call for Monday",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Book a 1 hour meeting next week",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I want to set up a team meeting",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Schedule a video call for Tuesday 2pm",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Plan a meeting with the marketing department",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Set up a one-on-one with my manager",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Schedule a weekly sync with the team",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Book a call with the consultant",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Set up a Zoom call with the client",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I need to schedule a project kickoff",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Schedule a planning meeting for next sprint",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I want to book a strategy session",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Set up a call to discuss the proposal",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Book a team catch-up for Monday morning",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Schedule a quick check-in with the team",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Book a workshop for the new project",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Set a meeting for the product demo",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I need to book a video conference",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Schedule an onboarding session for new hires",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Book a slot to discuss the contract",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Set up a retrospective meeting",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Can you book me in for a meeting on Friday",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Schedule a 30 minute sync with design",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I want to arrange a discovery call",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Set up a meeting to review the budget",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Update my calendar for the conference",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Add the project deadline to my calendar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Block out next Monday on my calendar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Mark me as busy on Friday afternoon",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Add a vacation block to my schedule",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Update my availability for next week",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Add the London conference to my calendar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Block my calendar for the annual review",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Put the product launch on my calendar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Add a focus block to Thursday morning",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Mark my calendar as unavailable on Wednesday",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Block Friday afternoon for deep work",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Add the quarterly review to my calendar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Update my out-of-office on the calendar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Add the team offsite to my schedule",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Block time on Monday for the all-hands",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Add a personal event to my calendar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Update my calendar with the new event",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Block the morning for uninterrupted work",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Mark my schedule as busy all day Friday",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "I need to update my calendar for the seminar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Block time for the executive offsite",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Put the board meeting on my calendar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Add the product release date to my calendar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Block Thursday for the strategy day",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Update my calendar to show I am on leave",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Block the afternoon for personal errands",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Put the hackathon dates on my calendar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Update my calendar with the travel dates",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Block my lunch break on the calendar",
+    "intent": "update_calendar"
+  },
+  {
+    "text": "Remind me to call John at 4pm",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Set a reminder for my dentist appointment",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Remind me tomorrow morning to send the report",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Create a reminder for the team standup",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "I need a reminder to take my medication at 8am",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Alert me 30 minutes before the meeting",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Set an alarm for my flight tomorrow",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Remind me to submit the report by Friday",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Set a notification for the project deadline",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Remind me to pay the invoice on Monday",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Set a reminder to follow up with the client",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Remind me to check my emails at noon",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Set an alert for the product launch",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "I need a reminder to renew my subscription",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Alert me when the meeting is about to start",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Set a daily reminder for my standup",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Please remind me to send the invoice",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Create an alert for the board meeting",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Remind me to respond to the email",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Set a reminder to call the bank tomorrow",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "I need an alert before the conference call",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Set a reminder for the school pickup",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Create a reminder for the webinar",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Set an alert for my weekly review",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Remind me to prepare the agenda for tomorrow",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Set a reminder for the tax deadline",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "I need an alert to join the webinar at 6pm",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Set a nightly reminder to log my hours",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Remind me to back up my files on Sunday",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Alert me to send the weekly report on Friday",
+    "intent": "create_reminder"
+  },
+  {
+    "text": "Send an email to test@test.com",
+    "intent": "send_email"
+  },
+  {
+    "text": "Email John about the meeting",
+    "intent": "send_email"
+  },
+  {
+    "text": "Write an email to sarah@company.com",
+    "intent": "send_email"
+  },
+  {
+    "text": "I want to send a message to the team",
+    "intent": "send_email"
+  },
+  {
+    "text": "Draft an email to my boss",
+    "intent": "send_email"
+  },
+  {
+    "text": "Send a message to john@example.com",
+    "intent": "send_email"
+  },
+  {
+    "text": "Compose an email about the project update",
+    "intent": "send_email"
+  },
+  {
+    "text": "Email the client about the deadline",
+    "intent": "send_email"
+  },
+  {
+    "text": "I need to send an email to marketing",
+    "intent": "send_email"
+  },
+  {
+    "text": "Write an email to notify the team",
+    "intent": "send_email"
+  },
+  {
+    "text": "Send a note to manager@work.com",
+    "intent": "send_email"
+  },
+  {
+    "text": "I want to email a report to finance",
+    "intent": "send_email"
+  },
+  {
+    "text": "Send a quick email to alice@domain.com",
+    "intent": "send_email"
+  },
+  {
+    "text": "Write an email to the customer service team",
+    "intent": "send_email"
+  },
+  {
+    "text": "Please send an email to the vendor",
+    "intent": "send_email"
+  },
+  {
+    "text": "Send a reminder email to the participants",
+    "intent": "send_email"
+  },
+  {
+    "text": "Email the contractor about the invoice",
+    "intent": "send_email"
+  },
+  {
+    "text": "Compose an email with the meeting notes",
+    "intent": "send_email"
+  },
+  {
+    "text": "Send the proposal to client@business.com",
+    "intent": "send_email"
+  },
+  {
+    "text": "Write an email confirming the appointment",
+    "intent": "send_email"
+  },
+  {
+    "text": "Email the team about tomorrow's standup",
+    "intent": "send_email"
+  },
+  {
+    "text": "Write a thank you email to the interviewer",
+    "intent": "send_email"
+  },
+  {
+    "text": "Send the invoice to billing@company.com",
+    "intent": "send_email"
+  },
+  {
+    "text": "Compose an email to request a meeting",
+    "intent": "send_email"
+  },
+  {
+    "text": "I want to send a status update by email",
+    "intent": "send_email"
+  },
+  {
+    "text": "Email a copy of the report to the CEO",
+    "intent": "send_email"
+  },
+  {
+    "text": "Write an email asking for feedback",
+    "intent": "send_email"
+  },
+  {
+    "text": "Email a reminder about the deadline",
+    "intent": "send_email"
+  },
+  {
+    "text": "Send a quick note to the operations team",
+    "intent": "send_email"
+  },
+  {
+    "text": "Email the stakeholders about the delay",
+    "intent": "send_email"
+  },
+  {
+    "text": "I want to make a payment",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Pay my outstanding balance",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I need to pay for my appointment",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Process my payment please",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I would like to pay the invoice now",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Can I pay my bill online",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Please charge my card for the session",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I want to settle my account balance",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Pay the outstanding fee of 50 pounds",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I need to clear my payment",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Please take payment for my visit",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I want to pay for my consultation now",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Charge my credit card for the appointment",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I need to pay my overdue balance",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Can you process a payment of 75 dollars",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I want to complete my payment",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Please deduct the fee from my account",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I need to pay the booking deposit",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Take the payment for my session today",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I want to pay using my debit card",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Please process the payment for my last visit",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I need to make a partial payment",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Charge me for the two sessions I had",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I want to pay my bill in full",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Please process my insurance co-payment",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I need to pay for the service I received",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Take the deposit for my upcoming appointment",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I want to pay by bank transfer",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Please finalise my payment for the session",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I need to pay the cancellation fee",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I want a refund",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please refund my payment",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I was charged incorrectly and need a refund",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Can I get my money back",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I would like to request a refund for my appointment",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please reverse the charge on my account",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I need a refund for the cancelled session",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I was overcharged and want a refund",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please return the payment to my card",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I want to claim a refund for the missed appointment",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Refund the deposit I paid",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I cancelled the appointment and need my money back",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please process a refund of 50 dollars",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I am entitled to a refund for the session",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Can you refund the no show fee",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I would like a full refund please",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please credit my account for the overpayment",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I want my deposit back",
+    "intent": "request_refund"
+  },
+  {
+    "text": "The service was not delivered and I need a refund",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please reverse my last payment",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I need to get reimbursed for the appointment fee",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Can I have a partial refund for the session",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I want to dispute the charge and get a refund",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please refund the booking fee I was charged",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I am requesting a refund due to a billing error",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please return my payment as I did not attend",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I want a refund because the appointment was cancelled",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Credit my account for the double charge",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I need my money refunded immediately",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please process the refund back to my card",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Has my payment gone through",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "What is the status of my payment",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I want to check if I have been charged",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Did my payment process successfully",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Can you confirm my payment was received",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I need to verify my payment status",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Is my invoice paid",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Check if my last payment went through",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I want to know if my balance is cleared",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Was I charged for the appointment",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Can I see the status of my transaction",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I need to check whether my payment failed",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Did the charge go through on my card",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Please confirm my account has been billed",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I want to see if my payment is pending",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Has the refund been processed",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Is my outstanding balance cleared",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Check my payment for the last session",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I need to know if I owe anything",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Was the payment taken from my account",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I want to verify the charge on my statement",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Did my bank transfer go through",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Has the deposit payment cleared",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I need to confirm my payment was successful",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "What is the current status of my account balance",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I want to see if there is an outstanding payment",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Has the insurance payment been processed",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Check my last transaction status",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I need to know if my card was successfully charged",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Was the co-payment taken from my account",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Can I get a copy of my invoice",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Please send me my bill",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need an invoice for my last appointment",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Can you email me my receipt",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I want to download my invoice",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Please provide me with a billing statement",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need a receipt for my last payment",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Send me the invoice for my last session",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Can I get a billing summary",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need a copy of my bill for insurance",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Please generate an invoice for my visit",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I want a PDF of my invoice",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Send me an itemised bill for my appointment",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need an invoice for tax purposes",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Can I have a receipt emailed to me",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Please provide an invoice for the services rendered",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need a formal invoice from you",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Can you send my billing document to my email",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I want a breakdown of what I was charged",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Please issue an invoice for my consultations",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need the invoice number for my records",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Send me a receipt for the payment I made",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Can you provide a detailed invoice",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need an invoice for reimbursement",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Please send me the billing document",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I want a copy of the charges from my last visit",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Can I get an electronic invoice",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Send me a VAT invoice for my appointment",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need the invoice for my records",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Please generate a receipt for my last session",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Show me my payment history",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I want to see all my past payments",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Can I view my billing history",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "List all my transactions",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I need a record of all my payments",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Show me what I have paid in the last year",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I want to review my transaction history",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Can you pull up my payment records",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I need a statement of all charges",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Please show me all my past invoices",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I want to see a history of charges to my account",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Can you list all the payments I have made",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I need my complete billing history",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Show me all transactions on my account",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I want a summary of what I have spent",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Can I get a full statement of my payments",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Please list all charges from this year",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I need to review all my historical payments",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Show me my account history for the past 6 months",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I want to see all my past receipts",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Can you generate a payment history report",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I need a log of all the fees I have paid",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Pull up all charges associated with my account",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I want to export my payment history",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Show all previous billing statements",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I need the full list of payments made since January",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Please provide a complete payment audit trail",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I want to see every charge made to my card",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Can you show me a year to date payment summary",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I need all my past billing records",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I want to update my billing details",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Please change my payment method",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I need to add a new credit card",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Update my billing address",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I want to change the card on file",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Please update my direct debit details",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I need to change my payment information",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Can I add a new payment method",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Update my card expiry date",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I want to switch to a different payment method",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Please change my billing email address",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I need to update my bank account for payments",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Can you replace my expired card details",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I want to add my insurance details for billing",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Please update the name on my billing account",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I need to change my payment card",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Update my billing preferences",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I want to set up automatic payments",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Please link a new bank account to my profile",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I need to change my preferred payment currency",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Can I update the billing contact on my account",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I want to change from monthly to annual billing",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Please remove my old card and add a new one",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I need to add a VAT number to my account",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Can I change the billing frequency on my plan",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I want to update my company billing details",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Please update the payment method to my new debit card",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I need to update my insurance for billing purposes",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Change the default payment method on my account",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I want to set up invoice billing instead of auto charge",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I want to dispute a charge",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I have been incorrectly charged",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "Please investigate this charge on my account",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I do not recognise this transaction",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I was charged twice for the same appointment",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I want to challenge an incorrect billing",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "Please review the charge from last month",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I need to dispute an unauthorised payment",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "The amount charged does not match what was agreed",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I was billed for a session I did not attend",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I want to raise a billing dispute",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "Please look into this overcharge",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I am contesting the charge on my last statement",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "The fee I was charged is wrong",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I need to flag an incorrect charge",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I was double billed and want this resolved",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "Please escalate this billing issue",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I am disputing the cancellation fee I was charged",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I believe I have been overcharged for my appointment",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "Can you investigate the charge from Tuesday",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I want to formally dispute this invoice",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "The billing is incorrect and I want it reviewed",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I was charged a no show fee but I did attend",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "Please remove the erroneous charge from my account",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I need to contest the amount billed last week",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I want to open a dispute about my last payment",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "The transaction on my account seems fraudulent",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I was charged for services not rendered",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "Please correct the billing error on my account",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I need to escalate this incorrect charge to a manager",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I need to see the doctor and book a slot",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Book me in for a medical appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I want to get a GP appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Can I book a new patient appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I need to register and book my first appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Please book a follow up appointment after my surgery",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I want to schedule a physiotherapy appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Book me in for a blood test appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I need a dental appointment as soon as possible",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Can you book an eye test appointment for me",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I want to arrange a personal training appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Book an appointment with my accountant",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I need to make a legal consultation appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Please book my annual health check appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I need to schedule a hair appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Book me in for a skin consultation",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I want to get a nutrition appointment booked",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Please book an urgent care appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "I need to book an initial assessment appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Can you arrange a specialist referral appointment",
+    "intent": "book_appointment"
+  },
+  {
+    "text": "Set up an internal team sync for Monday",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I need to organise a stand up with the engineers",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Can you book a conference call with the client team",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Schedule a sprint planning session for next week",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I want to set up a business review meeting",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Book a catch-up call with the account manager",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I need to arrange a board-level meeting",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Please book a sales pipeline review meeting",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I want to set up a product roadmap meeting",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Can you schedule a performance review meeting with HR",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I need to organise a cross-team alignment meeting",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Book a meeting to go over the quarterly targets",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Set up a call with the stakeholders on Friday",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I want to schedule a project status meeting",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Please book a post-mortem meeting after the launch",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I need a meeting to review code with the dev team",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Arrange a handover meeting with the new team",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Book a weekly check-in call with my manager",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I want to set up a budget planning meeting",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "Schedule a lessons learned meeting after the project",
+    "intent": "book_meeting"
+  },
+  {
+    "text": "I am writing to confirm my appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Just confirming I will be there for my appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Yes please confirm my booking is secured",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I want to officially confirm my appointment slot",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Please acknowledge my appointment confirmation",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I confirm I will attend the appointment on Monday",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Confirming attendance for my appointment tomorrow",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Yes that slot works please confirm the appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "I want to make sure my appointment is locked in",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Please send a confirmation for my appointment",
+    "intent": "confirm_appointment"
+  },
+  {
+    "text": "Do I have any appointments booked this week",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Can you tell me what time my appointment is",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I want to check the location of my appointment",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Look up whether I have an appointment on Thursday",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Am I booked in for an appointment next week",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I need to find out who my appointment is with",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Can you show me my next scheduled appointment",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I want to know the full details of my booking",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Has my appointment been added to the system",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "Please tell me the time and date of my appointment",
+    "intent": "check_appointment_status"
+  },
+  {
+    "text": "I just paid and want to confirm it went through",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Can you tell me if my account is up to date",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I need to know if there is anything outstanding on my account",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Did the direct debit go out this month",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I want to check if my recent payment posted",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Can you confirm the payment I made yesterday cleared",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I need to see if my invoice has been paid",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Was my credit card charged for the last session",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I want to verify no outstanding balance exists",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "Check whether my payment from last week was received",
+    "intent": "check_payment_status"
+  },
+  {
+    "text": "I am ready to pay now",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Take the payment for my session",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I want to go ahead and pay the balance owed",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Please run my card for the appointment fee",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I need to pay the outstanding amount on my account",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Charge the session fee to my card on file",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I want to pay off everything I owe",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Process the payment for my upcoming appointment",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I need to pay before my next appointment",
+    "intent": "make_payment"
+  },
+  {
+    "text": "Please take the full payment from my account now",
+    "intent": "make_payment"
+  },
+  {
+    "text": "I did not turn up for my appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Please note I was absent from my appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I completely forgot my appointment and did not go",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Record that I missed my scheduled visit today",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I was a no show please update my record",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I did not attend and want to rebook",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Please log that I failed to attend the appointment",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Mark me as absent for the session this morning",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I was unable to make the appointment please record that",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "Note that I missed the appointment on Monday morning",
+    "intent": "no_show_appointment"
+  },
+  {
+    "text": "I would like my payment returned",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please give me a refund for the unused sessions",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I am asking for my money to be refunded",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I paid in advance and need a refund for unused time",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please refund the amount charged to my account",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I want to get a reimbursement for the appointment",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I need to be refunded for a cancelled visit",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please process a full refund to my original payment method",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I would like to claim a refund on my last invoice",
+    "intent": "request_refund"
+  },
+  {
+    "text": "Please refund my credit card for the appointment that was cancelled",
+    "intent": "request_refund"
+  },
+  {
+    "text": "I am contesting a charge on my account",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "This charge is wrong and I want it corrected",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I never agreed to this charge please investigate",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I want to escalate a billing error",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "Please investigate the incorrect charge on my last bill",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I am formally disputing the fee I was charged",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "This transaction was not authorised by me",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I believe the fee applied is not correct",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "Please raise a dispute for the charge dated last Tuesday",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "I want to challenge the amount billed to my account",
+    "intent": "dispute_charge"
+  },
+  {
+    "text": "Please send my invoice to my registered email",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need an official billing document for my records",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Can you generate an invoice for my last three visits",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need a receipt to claim back on expenses",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Please email me the invoice for my latest appointment",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I want to download the billing document for this month",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Send me the receipt for payment reference 12345",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need a proper invoice with VAT breakdown",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "Please provide a formal bill for the services I received",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I want to retrieve the invoice from my last session",
+    "intent": "get_invoice"
+  },
+  {
+    "text": "I need a full record of every payment I have ever made",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Please show me all charges going back 12 months",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I want to see my entire billing history",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Can you export all my past payment records",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I need a historical summary of all transactions",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Show me every payment taken from my account",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I want an overview of all fees charged over the past year",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Please list all debits from my account to date",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I need a complete ledger of my account activity",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "Can you show me the full transaction log for my account",
+    "intent": "get_payment_history"
+  },
+  {
+    "text": "I need to swap my old card for a new one",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Please update the expiry date on my payment card",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I want to add a secondary payment method",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Can you change the billing address on my account",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I need to update my bank details for future payments",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Please change the card number saved on my profile",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I want to switch my payment to a business account",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Update the billing email so invoices go to my new address",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "I need to modify my payment information in the system",
+    "intent": "update_billing_details"
+  },
+  {
+    "text": "Please update the payment details held on file for me",
+    "intent": "update_billing_details"
+  }
 ]

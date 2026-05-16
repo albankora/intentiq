@@ -2,7 +2,7 @@
 predict.py
 ----------
 Production inference module for Clarix NLU.
-Loads the trained model and exposes predict() for use by app.py.
+Supports 17 intents across the full appointment + payment lifecycle.
 """
 
 import os, pickle, re
@@ -62,7 +62,6 @@ _TIME = re.compile(
     re.I,
 )
 
-# Requires a realistic phone pattern: optional +, country/area code, min 7 digits
 _PHONE = re.compile(
     r"\b(\+?\d{1,3}[\s\-]?)?(\(?\d{2,4}\)?[\s\-]?)?\d{3,4}[\s\-]?\d{3,4}\b"
 )
@@ -73,8 +72,13 @@ _LOCATION = re.compile(
     re.I,
 )
 
+_CURRENCY = re.compile(
+    r"(\£|\$|\€|GBP|USD|EUR)\s?[\d,]+(?:\.\d{2})?|"
+    r"[\d,]+(?:\.\d{2})?\s?(\£|\$|\€|GBP|USD|EUR)",
+    re.I,
+)
+
 def _extract_phone(text: str):
-    """Return a phone match only if it looks like a real number (7+ digits)."""
     for match in _PHONE.finditer(text):
         digits = re.sub(r"\D", "", match.group())
         if len(digits) >= 7:
@@ -86,23 +90,41 @@ def extract_entities(text: str) -> dict:
     dates     = _DATE.findall(text)
     times     = _TIME.findall(text)
     locations = _LOCATION.findall(text)
+    amounts   = _CURRENCY.findall(text)
     return {
-        "email":    emails[0]    if emails    else None,
-        "date":     dates[0]     if dates     else None,
-        "time":     times[0]     if times     else None,
+        "email":    emails[0]                       if emails    else None,
+        "date":     dates[0]                        if dates     else None,
+        "time":     times[0]                        if times     else None,
         "phone":    _extract_phone(text),
-        "location": locations[0] if locations else None,
+        "location": locations[0]                    if locations else None,
+        "amount":   next((a for t in amounts for a in t if a), None),
     }
 
 
 # ── action descriptions ───────────────────────────────────────────────────────
 _ACTIONS = {
-    "reschedule_appointment": "Reschedule the appointment to the new date/time",
-    "cancel_appointment":     "Cancel the appointment and remove it from the calendar",
-    "send_email":             "Compose and send an email to the specified recipient",
-    "book_meeting":           "Create a new meeting event in the calendar",
-    "create_reminder":        "Set a reminder notification for the specified time",
-    "update_calendar":        "Update calendar availability or add an event block",
+    # Appointment lifecycle
+    "book_appointment":        "Create a new appointment booking",
+    "confirm_appointment":     "Confirm and lock in the pending appointment",
+    "reschedule_appointment":  "Move the appointment to a new date or time",
+    "cancel_appointment":      "Cancel the appointment and remove it from the calendar",
+    "check_appointment_status":"Look up the details or status of the appointment",
+    "no_show_appointment":     "Record a missed or unattended appointment",
+    # Calendar & meetings
+    "book_meeting":            "Schedule a new meeting or call",
+    "update_calendar":         "Add an event or block time on the calendar",
+    "create_reminder":         "Set a timed reminder or alert",
+    # Communication
+    "send_email":              "Compose and send an email",
+    # Payments
+    "make_payment":            "Process a payment or charge",
+    "request_refund":          "Initiate a refund to the original payment method",
+    "check_payment_status":    "Look up the status of a transaction or balance",
+    # Billing
+    "get_invoice":             "Retrieve or send a billing document or receipt",
+    "get_payment_history":     "Return a list of past transactions",
+    "update_billing_details":  "Change the payment method or billing information",
+    "dispute_charge":          "Raise a formal dispute about an incorrect charge",
 }
 
 
@@ -118,13 +140,13 @@ def predict(text: str) -> dict:
         dict with keys: intent, confidence, scores, entities, tokens, action.
 
     Raises:
-        ValueError: if text is empty or not a string.
+        ValueError:   if text is empty or not a string.
         RuntimeError: if the model file has not been generated yet.
     """
     if not isinstance(text, str) or not text.strip():
         raise ValueError("text must be a non-empty string")
 
-    text = text.strip()[:500]   # hard cap — matches app.py validation
+    text = text.strip()[:500]
 
     m       = _model()
     proc    = preprocess(text)
@@ -144,16 +166,36 @@ def predict(text: str) -> dict:
 
 if __name__ == "__main__":
     samples = [
-        "I want to reschedule my appointment to next Monday at 2pm",
-        "Send an email to boss@company.com about the Q3 deadline",
-        "Cancel tomorrow's 3pm meeting with the marketing team",
-        "Book a meeting with John in London on Friday at 10am",
-        "Remind me at 8am to take my medication",
-        "Block my calendar for the Berlin conference in June",
+        ("Book me an appointment with the doctor on Friday",       "book_appointment"),
+        ("Please confirm my appointment for Monday morning",       "confirm_appointment"),
+        ("I need to reschedule my appointment to next Thursday",   "reschedule_appointment"),
+        ("Cancel my 3pm appointment tomorrow",                     "cancel_appointment"),
+        ("What time is my appointment on Wednesday",               "check_appointment_status"),
+        ("I missed my appointment this morning",                   "no_show_appointment"),
+        ("Set up a team meeting for Friday at 2pm",                "book_meeting"),
+        ("Block my calendar for the Berlin conference in June",    "update_calendar"),
+        ("Remind me at 8am to take my medication",                 "create_reminder"),
+        ("Send an email to boss@company.com about the deadline",   "send_email"),
+        ("I want to pay my outstanding balance of £75",            "make_payment"),
+        ("Please refund the payment I made last week",             "request_refund"),
+        ("Did my payment go through yesterday",                    "check_payment_status"),
+        ("Send me an invoice for my last three sessions",          "get_invoice"),
+        ("Show me all payments I have made this year",             "get_payment_history"),
+        ("Please update my credit card details",                   "update_billing_details"),
+        ("I was charged twice and want to dispute it",             "dispute_charge"),
     ]
-    for s in samples:
-        r = predict(s)
-        entities = {k: v for k, v in r["entities"].items() if v}
-        print(f"  [{r['confidence']*100:.0f}%] {r['intent']:<30} {s}")
+    print(f"\n{'─'*72}")
+    print(f"  {'INPUT':<48} {'PREDICTED':<28} CONF")
+    print(f"{'─'*72}")
+    passed = 0
+    for text, expected in samples:
+        r    = predict(text)
+        ok   = r["intent"] == expected
+        passed += ok
+        mark = "✓" if ok else "✗"
+        entities = {k:v for k,v in r["entities"].items() if v}
+        print(f"  {mark} {text[:46]:<48} {r['intent']:<28} {r['confidence']*100:.0f}%")
         if entities:
-            print(f"         entities: {entities}")
+            print(f"    entities: {entities}")
+    print(f"{'─'*72}")
+    print(f"  Passed: {passed}/{len(samples)}\n")

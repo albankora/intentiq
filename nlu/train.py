@@ -2,16 +2,16 @@
 train.py
 --------
 Production trainer for Clarix NLU.
-Uses the best configuration found during experimentation:
+Best configuration (from train_experiment.py grid search):
   - Porter stemming
-  - TF-IDF (unigrams, sublinear_tf=True, max_features=5000)
-  - LinearSVC (C=0.5) wrapped in CalibratedClassifierCV for probabilities
+  - TF-IDF  ngram_range=(1,1), sublinear_tf=True
+  - LinearSVC C=1.0 wrapped in CalibratedClassifierCV
 
 Run:
     python train.py              # train on all data, save model
     python train.py --eval       # also print accuracy on a held-out split
 
-To experiment with different models/hyperparameters, use train_experiment.py.
+To benchmark alternative models/params use train_experiment.py.
 
 Output:
     models/intent_classifier.pkl
@@ -50,15 +50,14 @@ def preprocess(text: str) -> str:
 
 
 def build_pipeline() -> Pipeline:
-    """Best config determined by train_experiment.py grid search."""
+    """Best config from grid search on 650-example, 17-intent dataset."""
     return Pipeline([
         ("tfidf", TfidfVectorizer(
             ngram_range=(1, 1),
-            max_features=5000,
             sublinear_tf=True,
         )),
         ("clf", CalibratedClassifierCV(
-            LinearSVC(C=0.5, max_iter=2000)
+            LinearSVC(C=1.0, max_iter=2000)
         )),
     ])
 
@@ -67,13 +66,12 @@ def train(eval_mode: bool = False) -> None:
     with open(DATA) as f:
         data = json.load(f)
 
-    texts  = [preprocess(d["text"]) for d in data]
-    labels = [d["intent"]           for d in data]
+    texts   = [preprocess(d["text"]) for d in data]
+    labels  = [d["intent"]           for d in data]
     intents = sorted(set(labels))
 
     print(f"[train] {len(texts)} examples · {len(intents)} intents")
 
-    # optional held-out evaluation
     if eval_mode:
         X_tr, X_te, y_tr, y_te = train_test_split(
             texts, labels, test_size=0.15, random_state=42, stratify=labels
@@ -84,7 +82,6 @@ def train(eval_mode: bool = False) -> None:
         print(f"[eval]  Held-out accuracy: {accuracy_score(y_te, y_pred)*100:.2f}%")
         print(classification_report(y_te, y_pred))
 
-    # final fit on all data
     t0       = time.time()
     pipeline = build_pipeline()
     pipeline.fit(texts, labels)
